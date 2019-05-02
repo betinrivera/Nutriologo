@@ -18,3 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 //localhost:8000/api/estados/1
 
+Route::get('/dieta/{fecha}/{paciente}','DietaApiController@dieta')->name('api.dietas.dieta');
+
